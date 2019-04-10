@@ -1,0 +1,11 @@
+#output {
+  display: none;
+}
+
+button {
+  margin-bottom: 10px;
+}
+
+.card-deck {
+  margin-bottom: 20px;
+  }

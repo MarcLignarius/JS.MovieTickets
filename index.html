@@ -1,0 +1,52 @@
+<!-- This section sets up our html code, links to stylesheets and scripts. Editing this section is generally not recommended. -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Objects Practice: Movie Tickets</title>
+</head>
+<body>
+<!-- This section is the header of the site. -->
+  <div class="container">
+    <h1>Welcome</h1>
+    <br>
+    <form>
+      <label for="movie-select">Choose a movie:</label>
+      <select id="movie-select">
+        <option value="">--Please choose an option--</option>
+        <option value="Dumb and Dumber" name="movie">Dumb and Dumber</option>
+        <option value="This is Spinal Tap" name="movie">This is Spinal Tap</option>
+        <option value="Rounders" name="movie">Rounders</option>
+      </select>
+      <br>
+      <label for="time-select">Choose a time:</label>
+      <select id="time-select">
+        <option value="">--Please choose an option--</option>
+        <option value="12pm" name="time">12:00pm</option>
+        <option value="4:30pm" name="time">4:30pm</option>
+        <option value="9:00pm" name="time">9:00pm</option>
+      </select>
+      <br>
+      <label for="age-select">Choose a ticket:</label>
+      <select id="age-select">
+        <option value="">--Please choose an option--</option>
+        <option value="child" name="age">Child</option>
+        <option value="adult" name="age">Adult</option>
+        <option value="senior" name="age">Senior</option>
+      </select>
+      <br>
+      <button type="submit" name="button" class="btn btn-dark">Get Tickets</button>
+    </form>
+    <div id="output">
+      <h5>Thank you for your purchase!</h5>
+      <p>You purchased a <span class="tickettype"></span> ticket to see <span class="movietitle"></span> at <span class="movietime"></span>.<br>
+      You were charged $<span class="ticketprice"></span> for this transaction. Enjoy the show!
+    </div>
+<!-- As with the very first section, this section should generally not be edited. -->
+  </div>
+</body>
+</html>
