@@ -1,8 +1,4 @@
 // Business Logic for TicketPrice ----------------------------------------------
-// function TicketPrice() {
-//   this.ticketDetails = [];
-// }
-
 function Ticket(movie, time, age) {
   this.movie = movie,
   this.time = time,
@@ -10,13 +6,13 @@ function Ticket(movie, time, age) {
   this.ticket = 8
 }
 
-Ticket.prototype.getTicketPrice = function (ticketDetail) {
+Ticket.prototype.getTicketPrice = function () {
   if(this.movie === "Dumb and Dumber"){
-    this.ticket += 2
+    this.ticket += 2;
   } else if(this.movie === "This Is Spinal Tap"){
-    this.ticket += 0
+    this.ticket += 0;
   } else if(this.movie === "Rounders"){
-      this.ticket += 0
+      this.ticket += 0;
   }
   if(this.time === "12pm"){
     this.ticket -= 2;
@@ -26,13 +22,12 @@ Ticket.prototype.getTicketPrice = function (ticketDetail) {
     this.ticket += 2;
   }
   if (this.age === "child") {
-    this.ticket += 0
+    this.ticket += 0;
   } else if (this.age === "adult") {
     this.ticket += 2;
   } else if (this.age === "senior") {
     this.ticket -= 2;
   }
-  // this.ticketDetails.push(ticketDetail);
 };
 
 // User Interface Logic --------------------------------------------------------
@@ -43,7 +38,7 @@ $(document).ready(function(){
     var time = $("#time-select").val();
     var age = $("#age-select").val();
     var ticket = new Ticket(movie, time, age);
-    console.log(ticket);
+    ticket.getTicketPrice();
     var ticketArray = (Object.values(ticket));
     $(".movietitle").text(ticketArray[0]);
     $(".movietime").text(ticketArray[1]);
