@@ -6,21 +6,20 @@
 
 ## Description
 
-_Use of Javascript objects and event delegation to build an Address Book_
+_Use of Javascript objects to return a price for a movie ticket based on movie, time, and age._
 
 ## Setup/Installation Requirements
 
 * _Clone from GitHub_
 * _Open index.html_
- * _Alternatively, launch [https://marclignarius.github.io/addressbook](https://marclignarius.github.io/addressbook/)_
+ * _Alternatively, launch [https://marclignarius.github.io/movies](https://marclignarius.github.io/movies/)_
 
 ## Specs
 
 | Behavior | Input | Output |
 | ------------- |:-------------:| -----:|
-| Program tracks a user's first name, last name and phone number | John Doe 123-456-7890 | John Doe |
-| Program displays contact information upon click | John Doe (click) | First Name: John, Last Name: Doe, Phone Number: 123-456-7890 |
-| Program deletes a contact upon click | John Doe / Delete | true |
+| Program tracks a user input for movie, time, and age | Rounders 9:00pm Adult | True |
+| Program returns price based on movie, time and age selected | Rounders 9:00pm Adult | $12 
 
 ## Known Bugs
 
